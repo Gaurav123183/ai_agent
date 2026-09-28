@@ -1,0 +1,111 @@
+{
+  "questions": [
+    {
+      "id": "type",
+      "label": "Type of emergency",
+      "options": [
+        { "value": "medical", "text": "Medical" },
+        { "value": "accident", "text": "Accident" },
+        { "value": "assault", "text": "Assault / threat" },
+        { "value": "trapped", "text": "Trapped / unsafe location" },
+        { "value": "lost", "text": "Lost / unreachable" },
+        { "value": "disaster", "text": "Natural disaster" }
+      ]
+    },
+    {
+      "id": "contacted",
+      "label": "Have you been able to contact them directly?",
+      "options": [
+        { "value": "yes", "text": "Yes, spoke to them" },
+        { "value": "no", "text": "No response" },
+        { "value": "unsure", "text": "Haven't tried yet" }
+      ]
+    },
+    {
+      "id": "location",
+      "label": "Do you know their exact location?",
+      "options": [
+        { "value": "yes", "text": "Yes, confirmed" },
+        { "value": "approx", "text": "Rough idea only" },
+        { "value": "no", "text": "No idea" }
+      ]
+    },
+    {
+      "id": "nearby",
+      "label": "Is anyone else nearby who could help?",
+      "options": [
+        { "value": "yes", "text": "Yes" },
+        { "value": "no", "text": "Not that I know of" }
+      ]
+    }
+  ],
+
+  "situations": [
+    {
+      "type": "medical",
+      "label": "Medical emergency",
+      "actions": [
+        "Call local emergency medical services immediately — this takes priority over everything else.",
+        "If you can reach the person, ask about symptoms, consciousness, and breathing so you can relay this to responders.",
+        "Identify anyone physically close to the person who can stay with them until help arrives.",
+        "Do not attempt medical procedures beyond basic first aid unless trained.",
+        "If there is no response within a few minutes, escalate to additional contacts and share the last known location with them."
+      ]
+    },
+    {
+      "type": "accident",
+      "label": "Accident",
+      "actions": [
+        "Call emergency services and give the exact or approximate location.",
+        "Try to confirm the person's condition and whether they are conscious and responsive.",
+        "Ask anyone nearby to assist until professional help arrives — do not move an injured person unnecessarily.",
+        "Share basic first-aid guidance only if no professional help is immediately available.",
+        "If contact is lost, escalate to other trusted contacts and consider notifying local authorities with the location."
+      ]
+    },
+    {
+      "type": "assault",
+      "label": "Assault or threat",
+      "actions": [
+        "Call the police immediately — this situation involves a potential threat to safety.",
+        "Do not attempt to intervene in person or approach the location alone.",
+        "If safe to do so, try to confirm the person's status without escalating the danger to them.",
+        "Identify two or more trusted people who can travel to the location together, never alone.",
+        "If there is no response, escalate to police and other emergency contacts without delay."
+      ]
+    },
+    {
+      "type": "trapped",
+      "label": "Trapped or unsafe location",
+      "actions": [
+        "Call the police or relevant rescue services and share the known location.",
+        "Try to contact the person directly to understand their situation and confirm they are not in immediate danger.",
+        "Reach out to people who live or work near the location and may be able to check in quickly.",
+        "Do not go to the location alone if it appears unsafe — send two or three trusted people together, or wait for official responders.",
+        "If there is no response within a short window, escalate to police with the last known location."
+      ]
+    },
+    {
+      "type": "lost",
+      "label": "Lost or unreachable",
+      "actions": [
+        "Try contacting the person through all available channels first.",
+        "If there's no response, notify others who were with them last or who know their routine.",
+        "Share the last known location with police if there's no contact within a reasonable time.",
+        "Coordinate with nearby trusted contacts to check likely locations together, not alone.",
+        "Escalate to formal missing-person procedures if there's an extended period with no contact."
+      ]
+    },
+    {
+      "type": "disaster",
+      "label": "Natural disaster",
+      "actions": [
+        "Check official local alerts and emergency services for the affected area.",
+        "Try to confirm the person's safety and location through any available communication.",
+        "Identify shelters or safe zones nearby that the person could reach.",
+        "Coordinate with other trusted contacts rather than traveling into an affected area alone.",
+        "Escalate to local disaster-response authorities if there is no contact for an extended period."
+      ]
+    }
+  ]
+}
